@@ -174,7 +174,14 @@ pre{
     }
 	.btn-info{
 		height: 15vw;
-	}    	
+	}  
+	#run-btn{
+		background: #04DA0E;
+		justify-content: center;
+		width:80%;
+		margin-left: 5%;
+		margin-right: 10%;
+	}	  	
 	.header{
 		height: auto;
 	}    
