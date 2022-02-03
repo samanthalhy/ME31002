@@ -151,7 +151,8 @@ pre{
 	justify-content: center;
 }
 .next{
-	margin-right: 2vw;
+	/*margin-right: 2vw;*/
+	margin-right: 2%;
 	display: flex;
 	align-items: right;
 	justify-content: right;	
