@@ -151,11 +151,9 @@ pre{
 	justify-content: center;
 }
 .next{
-	/*margin-right: 2vw;*/
-	/*margin-right: 2%;*/
+	margin-left: 90%;
 	display: flex;
 	align-items: right;
-	justify-content: right;	
 }
 
 .step{
@@ -189,13 +187,12 @@ pre{
 	.h2Div{
 		text-align: center;
 	}
-/*	.h2Div h2{
-		font-size:4vh;
-	}*/
 	.h2Div.active{
 		display: none;
 	}
-
+	.next{
+		margin-left: 85%;
+	}
 	img{
 		width:100%;
 	}
