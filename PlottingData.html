@@ -76,7 +76,7 @@
                         <div class="col-12 col-xl-6">
                             <img src="img/02.jpg">
                         </div></br>                               
-                        You can see that y axis is the same as before, but x axis is our predefined range. Notice, that the size of both x and y have to be equal.
+                        You can see that y axis is the same as before, but x axis is our predefined range. Note that the size of both x and y have to be equal.
                         </br><div class="codeClass"><code>size(x)</br>size(y)</code></div>
                         <div class="codeClass codeAns">
 <pre><code>
@@ -112,17 +112,17 @@ error: called from
                         <div class="col-12 col-xl-6">
                             <img src="img/03.jpg">
                         </div></br>                          
-                        One thing you might notice about this graph is that the lines are pretty jagged, it's not a smooth graph but sine x is actually a smooth graph. The reason why that is if we look at x again.
+                        One thing you might notice about this graph is that the lines are pretty jagged, it's not a smooth graph but sine x is actually a smooth graph. The reason why that is if we look at x again,
                         </br><div class="codeClass"><code>x</code></div></br>
-                        There are 200 points for a range of 100, so, that's a very low resolution. To increase it we either can reduce the range or put more points in between or both. So, let's recreate x.
+                        there are 200 points for a range of 100, so, that's a very low resolution. To increase it we either can reduce the range or put more points in between or both. So, let's recreate x.
                         </br><div class="codeClass"><code>x = linspace(0, 2*pi, 100);</br>y = sin(x);</br>plot(x,y);</code></div></br>
                         <div class="col-12 col-xl-6">
                             <img src="img/04.jpg">
                         </div></br>                           
-                        So now we can see that it's a lot smoother. </br>
+                        So now we can see that it's a lot smoother. </br></br>
                         Now let's look at how to plot two functions on the same plot. That might be useful to compare 2 different series, so let's create the second function.
                         </br><div class="codeClass"><code>y2 = cos(x);</code></div></br>
-                        If we type in just plot, we can see some different function signatures for the plot. If you look for the third one, it shows us that for every pair X and Y we want to plot, we just pass them in adjacent to each other. So in our case, we are going to have x and y and since it is the same x for both y and y2, we are going to pass in x again.
+                        If we type in just plot, we can see some different function signatures for the plot. If you look closer, you will find that it shows us that for every pair X and Y we want to plot, we just pass them in adjacent to each other. So in our case, we are going to have x and y, and since it is the same x for both y and y2, we are going to pass in x again.
                         </br><div class="codeClass"><code>plot(x, y, x, y2);</code></div></br>
                         <div class="col-12 col-xl-6">
                             <img src="img/05.jpg">
@@ -132,7 +132,7 @@ error: called from
                         <div class="col-12 col-xl-6">
                             <img src="img/06.jpg">
                         </div></br>                          
-                        So those are also passed in adjacent to the x and y. Now it's even easier to differentiate between the two lines. So the cosine graph is a bunch of green dots and the sine graph is a blue dashed line.</br></br>
+                        So those are also passed in adjacent to the x and y. Now it's even easier to differentiate between those two lines. So the cosine graph is a bunch of green dots and the sine graph is a blue dashed line.</br></br>
                         <hr></br>
                         <h5>Bar Chart</h5>
                         Those were the default type of plots, there are other types as well. Like a bar plot. Let's see a simple example.
@@ -156,7 +156,7 @@ x =
                         So this is a bar chart of the sine function. </br>
                         <hr></br>
                         <h5>Histogram</h5>
-                        The next useful plot is the histogram. If you have studied probability you should be familiar with it. So with a given data set we might want to figure out what kind of distribution does it follow. Let's generate some data where we want to know the distribution. Like a thousand points that are normally distributed.
+                        The next useful plot is the histogram. If you have studied probability, you should be familiar with it. So with a given data set we might want to figure out what kind of distribution does it follow. Let's generate some data where we want to know the distribution. Like a thousand points that are normally distributed.
                         </br><div class="codeClass"><code>x = rand(1000,1)</br>plot(x);</code></div></br>
                         <div class="col-12 col-xl-6">
                             <img src="img/09.jpg">
