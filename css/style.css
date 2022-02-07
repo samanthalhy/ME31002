@@ -150,8 +150,15 @@ pre{
 	align-items: center;
 	justify-content: center;
 }
+.prev{
+	/*width: 100%;*/
+	left: 10vw;
+	display: flex;
+	align-items: left;
+}
 .next{
-	margin-left: 90%;
+	/*width: 100%;*/
+	margin-left: 15vw;
 	display: flex;
 	align-items: right;
 }
@@ -190,9 +197,7 @@ pre{
 	.h2Div.active{
 		display: none;
 	}
-	.next{
-		margin-left: 85%;
-	}
+
 	img{
 		width:100%;
 	}
