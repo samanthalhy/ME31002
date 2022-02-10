@@ -109,7 +109,26 @@ ans =
    2   2
 </code></pre>
                         </div></br>                           
-
+                        What if we would like to combine 3 row vectors into a matrix?
+                        </br><div class="codeClass"><code>P = [1 2 3 4]; </br>Q = [5 6 7 8]; </br>R = [9 11 11 12]; </code></div></br>
+                        We can assign them into a matrix.
+                        </br><div class="codeClass"><code>S = [P; Q; R]</code></div>
+                        <div class="codeAns">
+<pre><code>
+S =
+    1    2    3    4
+    5    6    7    8
+    9   10   11   12
+</code></pre>
+                        </div></br>                               
+                        So, we obtained a three-by-four matrix.
+                        </br><div class="codeClass"><code>size(S)</code></div>
+                        <div class="codeAns">
+<pre><code>
+ans =
+   3   4
+</code></pre>
+                        </div></br>    
                     </p>
                     <hr>
                     <p>
