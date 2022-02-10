@@ -132,14 +132,16 @@ error: called from
                         <div class="col-12 col-xl-6">
                             <img src="img/06.jpg">
                         </div></br>                          
-                        So those are also passed in adjacent to the x and y. Now it's even easier to differentiate between those two lines. So the cosine graph is a bunch of green dots and the sine graph is a blue dashed line.</br></br>
+                        So those are also passed in adjacent to the x and y. Now it's even easier to differentiate between those two lines. So the cosine graph is a bunch of green dots and the sine graph is a blue dashed line.</br> 
+                        
                         <hr></br>
-                        <h5>3D Plot</h5>
-                        Beside 2D graphs, we can even plot things in 3D. Let's try to create a simple 3D line graph with the grid lines.
-                        </br><div class="codeClass"><code>m = 1:5;</br>plot3(m,m,m);</br>grid on</code></div></br>
+                        <h5>Line Graph with Error Bars</h5>
+                        Error bar can be used to show the range of error at each point. 
+                        </br><div class="codeClass"><code>x = 1:10:100;</br>y = rand(1,10)*100;</br>err = [2 8 10 4 5 6 3 9 2 7];</br>errorbar(x,y,err)</code></div></br>
                         <div class="col-12 col-xl-6">
-                            <img src="img/06_3d.jpg">
-                        </div></br>      
+                            <img src="img/err0.jpg">
+                        </div></br>    
+
                         <hr></br>                   
                         <h5>Bar Chart</h5>
                         Those were the default type of plots, there are other types as well. Like a bar plot. Let's see a simple example.
@@ -191,7 +193,7 @@ x =
                         And it automatically splits up the data so that purple is the first element, blue is the second element, and so on. There are ways to label them to make your visualization more comprehensible. We will not do that now, you can check MATLAB documentation for that later. </br>
                         <hr></br>
                         <h5>Scatter Plot</h5>
-                        The last plot that we are going to see is the scatter plot. It is very useful and widely used in data analysis. Let's return to our sine example.
+                        Another useful plot that we are going to see is the scatter plot. It is very useful and widely used in data analysis. Let's return to our sine example.
                         </br><div class="codeClass"><code>x = linspace(0, 2*pi, 1000);</code></div></br>
                         Now we are going to do something a little different, we are going to set it.
                         </br><div class="codeClass"><code>y = 10 * sin(x) + rand(1,1000);</code></div></br>
@@ -220,6 +222,19 @@ x =
                             <img src="img/16.jpg">
                         </div></br>                          
                         So now we can very clearly see the sine wave that we are supposed to see. So if you are doing data analysis and your points are not ordered you probably would want to use a scatter plot.
+
+                        <hr></br>
+                        <h5>3D Plot</h5>
+                        Beside 2D graphs, we can even plot things in 3D. Let's try to create a simple 3D line graph with the grid lines.
+                        </br><div class="codeClass"><code>m = 1:5;</br>plot3(m,m,m);</br>grid on</code></div></br>
+                        <div class="col-12 col-xl-6">
+                            <img src="img/3d0.jpg">
+                        </div></br>    
+                        Let's make something interesting.
+                        </br><div class="codeClass"><code>t = linspace(0,20,1000);</br>x = exp(t./10).*sin(15*t);</br>y = exp(t./10).*cos(15*t);</br>plot3(x,y,y);</br>grid on</code></div></br>
+                        <div class="col-12 col-xl-6">
+                            <img src="img/3d1.jpg">
+                        </div></br>                           
 
                     </p>              
                 </div>
