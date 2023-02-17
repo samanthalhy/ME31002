@@ -171,6 +171,11 @@ pre{
 	border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
 }
 
+.msdIMG{
+	width: 95%;
+	/*border: 10px solid;*/
+}
+
 @media screen and  (orientation: portrait) {
     #sidebar {
         margin-left: -250px;
