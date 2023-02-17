@@ -172,8 +172,7 @@ pre{
 }
 
 .msdIMG{
-	width: 95%;
-	/*border: 10px solid;*/
+	width: 20vw;
 }
 
 @media screen and  (orientation: portrait) {
@@ -205,5 +204,8 @@ pre{
 
 	img{
 		width:100%;
+	}
+	.msdIMG{
+		width: 90vw;
 	}
 }
